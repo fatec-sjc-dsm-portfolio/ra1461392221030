@@ -9,23 +9,74 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+            <div class="logo">
+                <a href="index.html"><img src="./assets/logo.png" alt="logo do portfólio" class="imagem-logo"></a>
+            </div>
+            <button class="hamburger" aria-label="Abrir menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    </header>
-    
-    <main>
-        <section>
-            <h1>🌟 Portfólio - Gabriela da Silva Barbosa</h1>
-            <img src="./assets/pfp.jpg" alt="foto de perfil" style="width: 200px; height: auto;">
-            <h2>Bem-vindo ao meu portfólio!</h2>
-            <p>Explore minhas experiências, projetos e formas de contato.</p>
-        </section>
-    </main>
+
+    <section class="home-section">
+        <main class="home-main">
+            <img src="./assets/pfp.jpg" alt="foto de perfil" class="foto-perfil">
+            <div class="perfil-texto">
+                <h2>Bem-vindo ao meu portfólio!</h2>
+                <p>Me chamo Gabriela e estou no último semestre de Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos. Meus maiores interesses na área de tecnologia são Desenvolvimento Web e DevOps.</p>
+            </div>
+        </main>
+    </section>
+
+    <section class="projetos-section">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="card">
+                <div class="card-nav">API 2022.2</div>
+                <div class="card-details">
+                    <p><b>Tema:</b> Internet Bank</p>
+                    <p><b>Cliente:</b> Interno, professor da Fatec.</p>
+                    <p><b>Meu papel no projeto:</b> Development Team.</p>
+                    <div class="card-footer">
+                         <a href="projetos.html#api-2022-2" class="ver-mais-btn">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-nav">API 2023.1</div>
+                <div class="card-details">
+                    <p><b>Tema:</b> Sistema de inspeção de entrada para controle de recebimento de grãos</p>
+                    <p><b>Cliente:</b> Jaia Software</p>
+                    <p><b>Meu papel no projeto:</b> Scrum Master</p>
+                    <div class="card-footer">
+                         <a href="projetos.html#api-2023-1" class="ver-mais-btn">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-nav">API 2023.2</div>
+                <div class="card-details">
+                    <p><b>Tema:</b> Gerenciamento de Times para Projetos Complexos</p>
+                    <p><b>Cliente:</b> SIATT</p>
+                    <p><b>Meu papel no projeto:</b> Development Team e Scrum Master</p>
+                    <div class="card-footer">
+                         <a href="projetos.html#api-2023-2" class="ver-mais-btn">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ver-outros-projetos">
+            <a href="projetos.html" class="ver-outros-btn">Ver outros projetos</a>
+        </div>
+    </section>
+<!-- 
+    <section id="contato" class="projetos-section">
+        <h2>Contato</h2>
+    </section> -->
 </body>
 </html>
