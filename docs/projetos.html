@@ -7,27 +7,91 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    </header>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./assets/logo.png" alt="logo do portfólio" class="imagem-logo"></a>
+                </div>
+                <button class="hamburger" aria-label="Abrir menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
-        <h1>🌸 Projetos</h1>
-        <section>
-            <h2>API 2022.2 - Internet Bank</h2>
-            <p>Cliente: Interno, professor da Fatec.</p>
-            <p>Meu papel no projeto: Development Team.</p>
-            <p>Cliente: Interno, professor da Fatec.</p>
-            <p>Problema: Cada dia a nossa vida está ficando mais digital. Para acompanhar isso, é necessário a criação de sistemas online para a facilitação do dia a dia, como poder realizar transações bancárias pelo celular ou computador.</p>
-            <p>Solução proposta: Criamos um software para um Banco Digital, que possui as funcionalidades de depósito, saque e transferência. Além da criação dos papéis fundamentais para que o projeto fosse mais próximo da realidade, sendo eles: Gerente Geral, Gerente de Agência e Cliente.</p>
-        </section>
+        <section class="card-section-grande">
+            <h2>Projetos</h2>
+            <ul class="card-list">
+                <li class="card-item-grande" id="api-2022-2">
+                    <h3>API 2022.2 - Internet Bank</h3>
+                    <p><b>Cliente:</b> Interno (Fatec)</p>
+                    <p><b>Meu papel no projeto:</b> Development Team.</p>
+                    <p><b>Problema:</b> Cada dia a nossa vida está ficando mais digital. Para acompanhar isso, é necessário a criação de sistemas online para a facilitação do dia a dia, como poder realizar transações bancárias pelo celular ou computador.</p>
+                    <p><b>Solução proposta:</b> Criamos um software para um Banco Digital, que possui as funcionalidades de depósito, saque e transferência. Além da criação dos papéis fundamentais para que o projeto fosse mais próximo da realidade, sendo eles: Gerente Geral, Gerente de Agência e Cliente.</p>
+                    <div class="tecnologias">
+                        <p>Tecnologias Utilizadas</p>
+                        <div class="tecnologias-container">
+                            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                            <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                            <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+                            <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                            <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                            <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code">
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="card-item-grande" id="api-2023-1">
+                    <h3>API 2023.1 - Sistema de inspeção de entrada para controle de recebimento de grãos</h3>
+                    <p><b>Cliente:</b> Jaia Software</p>
+                    <p><b>Meu papel no projeto:</b> Scrum Master</p>
+                    <p><b>Problema:</b> O problema que a empresa enfrentava era a falta de um sistema eficaz que ajudasse na inspeção da entrada de grãos. Eles precisavam de uma forma para garantir a qualidade e a quantidade de grãos recebidos.</p>
+                    <p><b>Solução proposta:</b> Criamos um software com o objetivo de realizar esse controle na entrada dos grãos. Para isso, foram criados quatro papéis para gerenciamento do projeto, sendo eles: Recebedor, Analista, Aprovador e Administrador. O Recebedor é responsável por receber os grãos diretos do caminhão e registrar os dados no sistema. O Analista confere os dados que ele recebeu do recebedor e compara com o que era esperado receber, além de conferir se os níveis de grãos ruins e com defeitos estão dentro da margem de aceitação. A partir dos dados da comparação do analista com o recebedor, é gerado um relatório que agora será analisado pelo Aprovador. Se tudo estiver correto, o aprovador aceita esses novos grãos que chegaram e o processo da entrada e inspeção está completo. O Administrador é responsável por gerenciar todo o projeto, ele tem acesso a todas as etapas e pode gerar relatórios a partir dos dados fornecidos pelos outros colaboradores.</p>
+                    <div class="tecnologias">
+                        <p><b>Tecnologias Utilizadas:</b></p>
+                        <div class="tecnologias-container">
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+                            <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+                            <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white" alt="NPM">
+                            <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js">
+                            <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                            <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                            <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code">
+                        </div>
+                    </div>
+                </li>
+                <li class="card-item-grande" id="api-2023-2">
+                    <h3>API 2023.2 - Gerenciamento de Times para Projetos Complexos</h3>
+                    <p><b>Cliente:</b> SIATT</p>
+                    <p><b>Meu papel no projeto:</b> Development Team e Scrum Master</p>
+                    <p><b>Problema:</b> A empresa, que foi nossa cliente nessa API, precisava de uma forma para gerenciar seus projetos complexos e administrar os times nesses projetos.</p>
+                    <p><b>Solução proposta:</b> Criamos um software que faria esse gerenciamento do projeto, a partir de dois papéis principais: Líder de Projeto e Engenheiro Chefe. O engenheiro chefe seria responsável pela administração macro dos projetos, criando os projetos a partir de Excel já existente, definindo prazos e atribuindo as atividades aos líderes de projeto. Já o líder de projeto é responsável por gerenciar a parte micro do projeto, atribuindo prazo das tarefas e criando o planejamento de cada parte do projeto que gera um gráfico final para acompanhar o desenvolvimento.</p>
+                    <div class="tecnologias">
+                        <p><b>Tecnologias Utilizadas:</b></p>
+                        <div class="tecnologias-container">
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+                            <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+                            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+                            <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring">
+                            <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                            <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                            <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                            <img src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white" alt="Eclipse">
+                            <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>        
     </main>
 </body>
 </html>
