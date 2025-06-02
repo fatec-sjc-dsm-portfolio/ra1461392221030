@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto</title>
+    <link rel="stylesheet" href="./styles/styles-common.css">
+    <link rel="stylesheet" href="./styles/styles-projeto-detalhe.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./assets/logo.png" alt="logo do portfólio" class="imagem-logo"></a>
+            </div>
+            <button class="hamburger" aria-label="Abrir menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>    <main>
+        <section class="card-section-grande">
+            <div class="voltar-projetos-outer" style="padding-left:5%;">
+                <a href="projetos.html" class="voltar-projetos-link"><b>← Voltar</b></a>
+            </div>            
+            <div style="width:100%; max-width:1100px; margin:0 auto;">
+                <h2 id="titulo-projeto" class="titulo-projeto-detalhe">Projeto</h2>
+                <div class="detalhe-bg detalhe-bg-card">
+                    <div id="detalhe-projeto"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+    const projetos = {
+        "api-2023-2": {
+            titulo: "API 2023.2 - Gerenciamento de Times para Projetos Complexos",
+            cliente: "SIATT",
+            categoria: "Projeto Acadêmico",
+            papel: "Scrum Master",
+            problema: "A empresa, que foi nossa cliente nessa API, precisava de uma forma para gerenciar seus projetos complexos e administrar os times nesses projetos.",
+            solucao: `Criamos um software que faria esse gerenciamento do projeto, a partir de dois pápeis principais: Líder de Projeto e Engenheiro Chefe. <br>O engenheiro chefe seria responsável pela administração macro dos projetos, criando os projetos a partir de Excel já existente, definindo prazos e atribuindo as atividades aos líderes de projeto. <br>Já o líder de projeto é responsável por gerenciar a parte micro do projeto, atribuindo prazo das tarefas e criando o planejamento de cada parte do projeto que gera um gráfico final para acompanhar o desenvolvimento.`,
+            tecnologias: [
+                {src: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", alt: "JavaScript"},
+                {src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", alt: "React"},
+                {src: "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white", alt: "Bootstrap"},
+                {src: "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white", alt: "Java"},
+                {src: "https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white", alt: "Spring"},
+                {src: "https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white", alt: "MySQL"},
+                {src: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white", alt: "Docker"},
+                {src: "https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white", alt: "Git"},
+                {src: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white", alt: "GitHub"},
+                {src: "https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white", alt: "Eclipse"},
+                {src: "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white", alt: "Visual Studio Code"},
+                {src: "https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE", alt: "Insomnia"}
+            ],
+            contribuicoes: `<p><b>Minhas contribuições e lições aprendidas</b></p><p align='justify'>Como membro da equipe de desenvolvimento e Scrum Master, contribuí decisivamente para o sucesso do projeto, implementando funcionalidades essenciais e facilitando a comunicação ágil entre os membros da equipe. Ao abordar o desafio de gerenciar projetos complexos para nosso cliente, aprendi a equilibrar as demandas macro e micro do projeto, destacando a importância da colaboração e da flexibilidade. Essa experiência solidificou minhas habilidades técnicas e de liderança, proporcionando valiosas lições sobre administração eficiente e adaptação no ambiente corporativo.</p>` 
+        },
+        "api-2023-1": {
+            titulo: "API 2023.1 - Sistema de inspeção de entrada para controle de recebimento de grãos",
+            cliente: "Jaia Software",
+            categoria: "Projeto Acadêmico",
+            papel: "Scrum Master",
+            problema: "O problema que a empresa enfrentava era a falta de um sistema eficaz que ajudasse na inspeção da entrada de grãos. Eles precisavam de uma forma para garantir a qualidade e a quantidade de grãos recebidos.",
+            solucao: `Criamos um software com o objetivo de realizar esse controle na entrada dos grãos. Para isso, foram criados quatro papéis para gerenciamento do projeto, sendo eles: Recebedor, Analista, Aprovador e Administrador. O Recebedor é responsável por receber os grãos diretos do caminhão e registrar os dados no sistema. O Analista confere os dados que ele recebeu do recebedor e compara com o que era esperado receber, além de conferir se os níveis de grãos ruins e com defeitos estão dentro da margem de aceitação. A partir dos dados da comparação do analista com o recebedor, é gerado um relatório que agora será analisado pelo Aprovador. Se tudo estiver correto, o aprovador aceita esses novos grãos que chegaram e o processo da entrada e inspeção está completo. O Administrador é responsável por gerenciar todo o projeto, ele tem acesso a todas as etapas e pode gerar relatórios a partir dos dados fornecidos pelos outros colaboradores.`,
+            tecnologias: [
+                {src: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", alt: "JavaScript"},
+                {src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", alt: "React"},
+                {src: "https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white", alt: "NodeJS"},
+                {src: "https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white", alt: "NPM"},
+                {src: "https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB", alt: "Express.js"},
+                {src: "https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white", alt: "MySQL"},
+                {src: "https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white", alt: "Git"},
+                {src: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white", alt: "GitHub"},
+                {src: "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white", alt: "Visual Studio Code"}
+            ],
+            contribuicoes: `<p><b>Minhas contribuições e lições aprendidas</b></p><p align='justify'>Como Scrum Master, desempenhei um papel crucial na resolução do desafio enfrentado pela empresa na gestão da entrada de grãos. Minha contribuição envolveu a implementação eficiente de um software que atribuiu papéis específicos - Recebedor, Analista, Aprovador e Administrador - para garantir o controle de qualidade e quantidade na recepção de grãos. A experiência ampliou minha compreensão sobre coordenação de equipe e sistemas de inspeção, proporcionando lições valiosas sobre a importância da colaboração estruturada e do gerenciamento de projetos especializados.</p>` 
+           },
+        "api-2022-2": {
+            titulo: "API 2022.2 - Internet Bank",
+            cliente: "Interno (Fatec)",
+            categoria: "Projeto Acadêmico",
+            papel: "Development Team.",
+            problema: "Cada dia a nossa vida está ficando mais digital. Para acompanhar isso, é necessário a criação de sistemas online para a facilitação do dia a dia, como poder realizar transações bancárias pelo celular ou computador.",
+            solucao: `Criamos um software para um Banco Digital, que possui as funcionalidades de depósito, saque e transferência. Além da criação dos papéis fundamentais para que o projeto fosse mais próximo da realidade, sendo eles: Gerente Geral, Gerente de Agência e Cliente.`,
+            tecnologias: [
+                {src: "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white", alt: "HTML5"},
+                {src: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white", alt: "CSS3"},
+                {src: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", alt: "JavaScript"},
+                {src: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54", alt: "Python"},
+                {src: "https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white", alt: "Flask"},
+                {src: "https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white", alt: "MySQL"},
+                {src: "https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white", alt: "Git"},
+                {src: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white", alt: "GitHub"},
+                {src: "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white", alt: "Visual Studio Code"}
+            ],
+            contribuicoes: `<p><b>Minhas contribuições e lições aprendidas</b></p><p align='justify'>Como membro da equipe de desenvolvimento em meu primeiro projeto significativo em tecnologia, contribuí para a solução do desafio de digitalizar as transações bancárias. Desenvolvemos um software para um Banco Digital, proporcionando funcionalidades essenciais como depósito, saque e transferência. Minha participação envolveu a aprendizagem e aplicação de ferramentas essenciais para o desenvolvimento de software, como HTML, CSS e banco de dados, ampliando significativamente minha bagagem técnica nessa experiência inaugural. Essa vivência destacou a importância dos sistemas online na evolução digital do nosso dia a dia.</p>` 
+         },
+        
+    };
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    if (id && projetos[id]) {
+        document.getElementById('titulo-projeto').textContent = projetos[id].titulo;
+        document.getElementById('detalhe-projeto').innerHTML = `
+            <p><b>Cliente:</b> ${projetos[id].cliente}</p>
+            <p><b>Categoria:</b> ${projetos[id].categoria}</p>
+            <p><b>Meu papel no projeto:</b> ${projetos[id].papel}</p>
+            <p><b>Problema:</b> ${projetos[id].problema}</p>
+            <p><b>Solução proposta:</b> ${projetos[id].solucao}</p>
+            <div class="tecnologias">
+                <p><b>Tecnologias Utilizadas:</b></p>
+                <div class="tecnologias-container">
+                    ${projetos[id].tecnologias.map(t => `<img src="${t.src}" alt="${t.alt}">`).join('')}
+                </div>
+            </div>
+            ${projetos[id].contribuicoes ? projetos[id].contribuicoes : ''}
+        `;    } else {
+        document.getElementById('detalhe-projeto').innerHTML = '<p>Projeto não encontrado.</p>';
+    }
+    </script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

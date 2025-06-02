@@ -1,0 +1,225 @@
+
+.card-section-grid {
+    margin: 120px auto 40px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 30px; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.card-section-grid h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px; 
+    margin-top: 0;
+    color: #333;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    justify-items: center;
+    padding: 10px 30px; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;    
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    max-height: 450px;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(218,68,105,0.15);
+}
+
+.card-item .card-nav {
+    background-color: #da4469;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-item .card-details {
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item p {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.card-footer {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Mantém o botão na parte inferior */
+}
+
+.ver-mais-btn {
+    display: inline-block;
+    background-color: #da4469;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto; /* Centraliza horizontalmente dentro do card-footer */
+}
+
+.ver-mais-btn:hover {
+    background-color: #aa0730;
+}
+
+/* FILTRO DE CATEGORIAS */
+.filtro-categorias {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.filtro-btn {
+    background: #fff;
+    border: 2px solid #da4469;
+    color: #da4469;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filtro-btn.ativo, .filtro-btn:hover {
+    background: #da4469;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(218, 68, 105, 0.2);
+}
+
+.categoria-projeto {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: #da4469;
+    border-radius: 12px;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha */
+        gap: 30px;
+        padding: 10px 40px; /* Ajuste de padding para ser mais consistente */
+        max-width: 900px; 
+    }
+      .card-section-grid {
+        margin-top: 115px; /* Ajustar margin-top para telas grandes */
+        padding: 0 25px; /* Consistência no padding */
+    }
+    
+    .card-item {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Manter 1 card por linha para telas abaixo de 900px */
+    .card-grid {
+        grid-template-columns: 1fr; /* 1 card por linha */
+        gap: 25px;
+        padding: 10px 40px; /* Aumentar o padding lateral para evitar colagem nas bordas */
+        max-width: 600px; /* Limitar a largura máxima para evitar cards muito largos */
+    }
+  
+    /* Ajustes para cards em telas médias */
+    .card-item {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto; /* Centralizar o card */
+    }
+      .card-section-grid {
+        margin-top: 110px; /* Ajustar margin-top para telas médias */
+        padding: 0 20px; /* Ajustar padding para telas menores */
+    }
+}
+
+@media (max-width: 700px) {
+    /* Grid para página de projetos: manter 1 por linha com espaçamentos ajustados */
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5px 25px 15px 25px; /* Adicionar padding nas laterais para que o card não encoste nas bordas */
+    }
+    /* Garantir espaço adequado abaixo da navbar em telas pequenas */
+    .card-section-grid {
+        margin-top: 100px;
+        padding: 0 15px;
+    }
+  
+    .filtro-categorias {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    /* Garantir que os cards não fiquem muito grandes em telas pequenas */
+    .card-item {
+        max-width: 100%;
+        min-height: 260px;
+        margin: 0 auto;
+    }
+}

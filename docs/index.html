@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Gabriela da Silva Barbosa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles-common.css">
+    <link rel="stylesheet" href="styles/styles-index.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -26,57 +29,230 @@
             <img src="./assets/pfp.jpg" alt="foto de perfil" class="foto-perfil">
             <div class="perfil-texto">
                 <h2>Bem-vindo ao meu portfólio!</h2>
-                <p>Me chamo Gabriela e estou no último semestre de Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos. Meus maiores interesses na área de tecnologia são Desenvolvimento Web e DevOps.</p>
+                <p>Me chamo Gabriela e estou no último semestre de Desenvolvimento de Software Multiplataforma na Fatec
+                    São José dos Campos. Meus maiores interesses na área de tecnologia são Desenvolvimento Web e DevOps.
+                </p>
             </div>
         </main>
     </section>
 
     <section class="projetos-section">
         <h2>Projetos</h2>
-        <div class="projetos-container">
-            <div class="card">
-                <div class="card-nav">API 2022.2</div>
-                <div class="card-details">
-                    <p><b>Tema:</b> Internet Bank</p>
-                    <p><b>Cliente:</b> Interno, professor da Fatec.</p>
-                    <p><b>Meu papel no projeto:</b> Development Team.</p>
-                    <div class="card-footer">
-                         <a href="projetos.html#api-2022-2" class="ver-mais-btn">Ver mais</a>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+            <div class="carousel" id="carousel">
+                <div class="card">
+                    <div class="card-nav">API 2025.1</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Acadêmico</p>
+                        <p><b>Tema:</b> Automação e Extração de Informações em Atendimento Inteligente</p>
+                        <p><b>Cliente:</b> IT01</p>
+                        <p><b>Meu papel no projeto:</b> Time de Desenvolvimento</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=api-2025-1" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">API 2024.2</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Acadêmico</p>
+                        <p><b>Tema:</b> Aplicativo web e mobile que usa IA para detectar e remover nuvens em imagens de satélite do CBERS-4A</p>
+                        <p><b>Cliente:</b> Visiona</p>
+                        <p><b>Meu papel no projeto:</b> Time de Desenvolvimento (Mobile)</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=api-2024-2" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">API 2024.1</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Acadêmico</p>
+                        <p><b>Tema:</b> Software de Processamento de Dados de Estações Meteorológicas</p>
+                        <p><b>Cliente:</b> Tecsus</p>
+                        <p><b>Meu papel no projeto:</b> Time de Desenvolvimento</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=api-2024-1" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">API 2023.2</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Acadêmico</p>
+                        <p><b>Tema:</b> Gerenciamento de Times para Projetos Complexos</p>
+                        <p><b>Cliente:</b> SIATT</p>
+                        <p><b>Meu papel no projeto:</b> Scrum Master</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=api-2023-2" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">API 2023.1</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Acadêmico</p>
+                        <p><b>Tema:</b> Sistema de inspeção de entrada para controle de recebimento de grãos</p>
+                        <p><b>Cliente:</b> Jaia Software</p>
+                        <p><b>Meu papel no projeto:</b> Scrum Master</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=api-2023-1" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">API 2022.2</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Acadêmico</p>
+                        <p><b>Tema:</b> Internet Bank</p>
+                        <p><b>Cliente:</b> Interno, professor da Fatec.</p>
+                        <p><b>Meu papel no projeto:</b> Time de Desenvolvimento</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=api-2022-2" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">Bot de Clima</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Pessoal</p>
+                        <p><b>Tema:</b> Bot no Telegram sobre Clima</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=bot-telegram" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">Projeto pessoal 2</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Pessoal</p>
+                        <p><b>Tema:</b>  Projeto pessoal 2</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=bot-telegram" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-nav">Projeto pessoal 3</div>
+                    <div class="card-details">
+                        <p><b>Categoria:</b> Projeto Pessoal</p>
+                        <p><b>Tema:</b>  Projeto pessoal 3</p>
+                        <div class="card-footer">
+                            <a href="projeto-detalhe.html?id=bot-telegram" class="ver-mais-btn">Ver detalhes</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card-nav">API 2023.1</div>
-                <div class="card-details">
-                    <p><b>Tema:</b> Sistema de inspeção de entrada para controle de recebimento de grãos</p>
-                    <p><b>Cliente:</b> Jaia Software</p>
-                    <p><b>Meu papel no projeto:</b> Scrum Master</p>
-                    <div class="card-footer">
-                         <a href="projetos.html#api-2023-1" class="ver-mais-btn">Ver mais</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-nav">API 2023.2</div>
-                <div class="card-details">
-                    <p><b>Tema:</b> Gerenciamento de Times para Projetos Complexos</p>
-                    <p><b>Cliente:</b> SIATT</p>
-                    <p><b>Meu papel no projeto:</b> Development Team e Scrum Master</p>
-                    <div class="card-footer">
-                         <a href="projetos.html#api-2023-2" class="ver-mais-btn">Ver mais</a>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
         </div>
-        <div class="ver-outros-projetos">
-            <a href="projetos.html" class="ver-outros-btn">Ver outros projetos</a>
+        <div class="ver_outros_projetos">
+            <a href="projetos.html" class="ver-outros-btn">Ver todos projetos</a>
         </div>
     </section>
-<!-- 
-    <section id="contato" class="projetos-section">
+    <section id="contato" class="contato-section">
         <h2>Contato</h2>
-    </section> -->
+        <div class="contato-icons">
+            <a href="https://github.com/gabidsbarbosa" target="_blank" class="contato-link">
+                <i class="fab fa-github contato-icon"></i>
+            </a>
+            <a href="https://linkedin.com/in/gabrieladsbarbosa" target="_blank" class="contato-link">
+                <i class="fab fa-linkedin contato-icon"></i>
+            </a>
+            <a href="mailto:gabrielasbarbosa4@gmail.com" class="contato-link">
+                <i class="fas fa-envelope contato-icon"></i>
+            </a>
+        </div>
+    </section>
+    <script>
+        let currentCardIndex = 0;
+
+        function scrollCarousel(direction) {
+            const carousel = document.getElementById('carousel');
+            const cards = carousel.querySelectorAll('.card');
+            if (!cards.length) return;
+
+            const isMobile = window.innerWidth <= 1200;
+
+            // Em telas grandes, usamos o scroll normal
+            if (!isMobile) {
+                const cardWidth = cards[0].offsetWidth + 25; // 25px é o gap
+                const visibleWidth = carousel.offsetWidth;
+                const scrollLeft = carousel.scrollLeft;
+                const maxScroll = carousel.scrollWidth - visibleWidth;
+
+                if (direction > 0) {
+                    // Se estiver no final, volta para o início
+                    if (Math.abs(scrollLeft - maxScroll) < 10) {
+                        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+                    }
+                } else {
+                    // Se estiver no início, vai para o final
+                    if (scrollLeft <= 0) {
+                        carousel.scrollTo({ left: maxScroll, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+                    }
+                }
+            }
+            // Em telas pequenas, usamos navegação baseada em classes
+            else {
+                // Remover a classe 'active' de todos os cards
+                cards.forEach(card => card.classList.remove('active'));
+
+                // Calcular o novo índice
+                if (direction > 0) {
+                    currentCardIndex = (currentCardIndex + 1) % cards.length;
+                } else {
+                    currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+                }
+
+                // Adicionar a classe 'active' ao novo card atual
+                cards[currentCardIndex].classList.add('active');
+            }
+        }
+
+        // Função para inicializar o carrossel com base no tamanho da tela
+        function initializeCarousel() {
+            const carousel = document.getElementById('carousel');
+            const cards = carousel.querySelectorAll('.card');
+            if (!cards.length) return;
+
+            const isMobile = window.innerWidth <= 1200;
+
+            if (isMobile) {
+                // Em dispositivos móveis, defina o primeiro card como ativo e esconda os outros
+                cards.forEach((card, index) => {
+                    card.classList.remove('active');
+                    if (index === 0) {
+                        card.classList.add('active');
+                    }
+                });
+                currentCardIndex = 0;
+            } else {
+                // Em telas grandes, remova as classes 'active' de todos os cards
+                // para que todos sejam visíveis
+                cards.forEach(card => card.classList.remove('active'));
+                carousel.scrollTo(0, 0);
+            }
+        }
+
+        // Inicializar o carrossel quando a página carregar
+        document.addEventListener('DOMContentLoaded', function () {
+            initializeCarousel();
+        });    // Reinicializar o carrossel quando a janela for redimensionada
+        window.addEventListener('resize', function () {
+            initializeCarousel();
+        });
+    </script>
+    <!-- Script para o menu hamburger -->
+    <script src="scripts/menu.js"></script>
+
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </body>
+
 </html>
