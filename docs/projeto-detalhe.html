@@ -35,6 +35,73 @@
     </main>
     <script>
     const projetos = {
+            "api-2024-1": {
+        titulo: "API 2024.1 - Software de Processamento de Dados de Estações Meteorológicas",
+        cliente: "SIATT",
+        categoria: "Projeto Acadêmico",
+        papel: "Time de Desenvolvimento (Frontend)",
+        problema: "A Tecsus, parceira da SIATT, desejava expandir suas soluções para a área de monitoramento ambiental, porém não dispunha de um sistema de baixo custo para coleta e visualização de dados meteorológicos confiáveis.",
+        solucao: `Desenvolvemos um portal web integrado com estações meteorológicas baseadas em sensores IoT, capazes de coletar dados como temperatura, umidade, pressão atmosférica, velocidade e direção do vento, e índice pluviométrico. Esses dados são processados em tempo real por um servidor, e apresentados em dashboards interativos que também geram alertas para situações críticas, como riscos de desastres naturais.`,
+        tecnologias: [
+            {src: "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black", alt: "JavaScript"},
+            {src: "https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=FFF", alt: "TypeScript"},
+            {src: "https://img.shields.io/badge/MySQL-4479A1.svg?style=for-the-badge&logo=MySQL&logoColor=white", alt: "MySQL"},
+            {src: "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black", alt: "React"},
+            {src: "https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white", alt: "CSS3"},
+            {src: "https://img.shields.io/badge/Bootstrap-6632a8.svg?style=for-the-badge&logo=Bootstrap&logoColor=white", alt: "Bootstrap"},
+            {src: "https://img.shields.io/badge/-MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white", alt: "MongoDB"}
+        ],
+        contribuicoes: `<p><b>Minhas contribuições e lições aprendidas</b></p><p align='justify'>Atuei como desenvolvedora frontend, contribuindo diretamente para o desenvolvimento da interface do portal de monitoramento meteorológico. Fui responsável por implementar telas responsivas e interativas, além de colaborar na integração dos dados recebidos dos sensores com a visualização em tempo real. Essa experiência reforçou meus conhecimentos em React, TypeScript e boas práticas de UX/UI voltadas para dados ambientais.</p>`
+    },
+    "api-2024-2": {
+        titulo: "API 2024.2 - Aplicativo web e mobile para análise de imagens satelitais com IA",
+        cliente: "Visiona",
+        categoria: "Projeto Acadêmico",
+        papel: "Time de Desenvolvimento (Mobile)",
+        problema: "Imagens obtidas por sensoriamento remoto frequentemente são comprometidas por nuvens e suas sombras, dificultando análises ambientais e territoriais confiáveis.",
+        solucao: `Desenvolvemos uma aplicação web e mobile capaz de realizar buscas por imagens do satélite CBERS-4A, com filtros por data e área geográfica, que aplica uma IA treinada para mascarar áreas cobertas por nuvens e sombras. O sistema exibe as imagens limpas e permite o download, facilitando a análise por pesquisadores e gestores ambientais.`,
+        tecnologias: [
+            {src: "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white", alt: "TypeScript"},
+            {src: "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white", alt: "Python"},
+            {src: "https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", alt: "React Native"},
+            {src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", alt: "React"},
+            {src: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white", alt: "Docker"},
+            {src: "https://img.shields.io/badge/Git-%23F05033?style=for-the-badge&logo=git&logoColor=white", alt: "Git"},
+            {src: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white", alt: "GitHub"},
+            {src: "https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white", alt: "AWS"},
+            {src: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white", alt: "PostgreSQL"},
+            {src: "https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white", alt: "Prisma"},
+            {src: "https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white", alt: "Slack"},
+            {src: "https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white", alt: "Jira"},
+            {src: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white", alt: "Figma"}
+        ],
+        contribuicoes: `<p><b>Minhas contribuições e lições aprendidas</b></p><p align='justify'>Atuei no desenvolvimento mobile utilizando React Native, contribuindo para a interface de busca de imagens e exibição das máscaras geradas pela IA. Trabalhei em conjunto com a equipe backend para realizar integrações via API REST. Essa experiência me permitiu aprofundar conhecimentos em geolocalização, manipulação de imagens e comunicação entre sistemas mobile e servidores, além de me adaptar ao uso de uma IA proprietária dentro de um fluxo de produto.</p>`
+    },
+    "api-2025-1": {
+        titulo: "API 2025.1 - Automação e Extração de Informações em Atendimento Inteligente",
+        cliente: "IT01",
+        categoria: "Projeto Acadêmico",
+        papel: "Time de Desenvolvimento",
+        problema: "Empresas enfrentam dificuldades em analisar grandes volumes de interações textuais de forma eficiente, perdendo oportunidades de otimizar o atendimento e identificar padrões valiosos.",
+        solucao: `Criamos um sistema de extração automatizada de informações com uso de Processamento de Linguagem Natural (PLN), capaz de resumir conversas, classificar interações e gerar dashboards com insights acionáveis. A plataforma conta com mecanismos de proteção de dados em conformidade com a LGPD e é escalável para uso em diferentes setores.`,
+        tecnologias: [
+            {src: "https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white", alt: "TypeScript"},
+            {src: "https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white", alt: "Next.js"},
+            {src: "https://img.shields.io/badge/Nest.js-E0234E?style=for-the-badge&logo=nestjs&logoColor=white", alt: "Nest.js"},
+            {src: "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white", alt: "Python"},
+            {src: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", alt: "React"},
+            {src: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white", alt: "Docker"},
+            {src: "https://img.shields.io/badge/Git-%23F05033?style=for-the-badge&logo=git&logoColor=white", alt: "Git"},
+            {src: "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white", alt: "GitHub"},
+            {src: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white", alt: "PostgreSQL"},
+            {src: "https://img.shields.io/badge/MongoDB-13aa52?style=for-the-badge&logo=mongodb&logoColor=white", alt: "MongoDB"},
+            {src: "https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white", alt: "Prisma"},
+            {src: "https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white", alt: "Slack"},
+            {src: "https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white", alt: "Jira"},
+            {src: "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white", alt: "Figma"}
+        ],
+        contribuicoes: `<p><b>Minhas contribuições e lições aprendidas</b></p><p align='justify'>Contribuí com a implementação de algoritmos de PLN e testes de classificação textual, além de colaborar na construção do front-end com React. Essa experiência foi essencial para consolidar meus conhecimentos em IA aplicada, segurança de dados e design de interfaces voltadas à visualização de insights. Também aprendi a trabalhar com grandes volumes de dados textuais e com integração contínua de APIs.</p>`
+    },
         "api-2023-2": {
             titulo: "API 2023.2 - Gerenciamento de Times para Projetos Complexos",
             cliente: "SIATT",
