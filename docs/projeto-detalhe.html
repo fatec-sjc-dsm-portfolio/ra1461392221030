@@ -27,6 +27,7 @@
                 <a href="projetos.html" class="voltar-projetos-link"><b>← Voltar</b></a>
             </div>            
             <div style="width:100%; max-width:1100px; margin:0 auto;">
+                <h2 id="titulo" class="titulo-projeto-detalhe"></h2>
                 <div class="detalhe-bg detalhe-bg-card">
                     <div id="detalhe-projeto"></div>
                 </div>
@@ -172,10 +173,12 @@
              repositorio: "https://github.com/Octoplus-Group/OctoplusBank",
          },
         
-    };
-    const params = new URLSearchParams(window.location.search);
+    };    const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
     if (id && projetos[id]) {
+        // Set the title
+        document.getElementById('titulo').textContent = projetos[id].titulo;
+        
         document.getElementById('detalhe-projeto').innerHTML = `
         <p><b>Cliente:</b> ${projetos[id].cliente}</p>
         <p><b>Categoria:</b> ${projetos[id].categoria}</p>
